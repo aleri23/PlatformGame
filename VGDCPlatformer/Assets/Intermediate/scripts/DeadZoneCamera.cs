@@ -42,15 +42,15 @@ public class DeadZoneCamera : MonoBehaviour {
         }
 
         if (localY < deadzone.yMin)
-        {
-            //if (smoothPos.y < 0)
-              //  smoothPos.y = 0;
+        {////
+              //if (smoothPos.y < 0)
+              smoothPos.y = 0;
             smoothPos.y += localY - deadzone.yMin;
         }
         else if (localY > deadzone.yMax)
-        {
-            //if (smoothPos.y < 0)
-              //  smoothPos.y = 0;
+        {////
+              //if (smoothPos.y < 0)
+              smoothPos.y = 0;
             smoothPos.y += localY - deadzone.yMax;
         }
 

@@ -25,7 +25,7 @@ public class PlayerMovementBeginner : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        //m_RigidBody2D = GetComponent<Rigidbody2D>(); //Instead of manually putting the RigidBody2D Component we can get the component from the Object
+        m_RigidBody2D = GetComponent<Rigidbody2D>(); //Instead of manually putting the RigidBody2D Component we can get the component from the Object
 
         m_Velocity = Vector3.zero; //same as new Vector3(0,0,0)
     }
