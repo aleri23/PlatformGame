@@ -34,7 +34,11 @@ public class PlayerMovementBeginner : MonoBehaviour {
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
+        if (m_Grounded && Input.GetKey("left shift"))
+        {
+            runSpeed = 40f;
+        }
+        else runSpeed = 20f;
         if (m_Grounded && Input.GetButtonDown("Jump"))
         {
             m_Grounded = false;
