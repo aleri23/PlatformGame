@@ -9,6 +9,7 @@ TagManager:
   - floor
   - environment
   - checkPoint
+  - Pickup
   layers:
   - Default
   - TransparentFX
