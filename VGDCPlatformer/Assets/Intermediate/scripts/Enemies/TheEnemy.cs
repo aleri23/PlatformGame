@@ -6,39 +6,42 @@ public class TheEnemy : MonoBehaviour {
 
 	public bool moveRight = false; //checks if the enemy moves right or left
 	public float movSpeed = 2.5f; //movement of the enemy
-	
-    //Patrol Positions
-    public Transform positionA;
-    public Transform positionB;
+    public Rigidbody2D rb; //the object's RigidBody2D
+    private string state = "walking"; //The current state of the enemy
+    private BoxCollider2D groundCheck; //the object's groundCheck collider
 
-    public GameObject parent;
+    private void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        groundCheck = gameObject.GetComponentInChildren<BoxCollider2D>();
+    }
 
-	
-	// Update is called once per frame
-	void Update () {
-		
-		if (moveRight == true)
+    // Update is called once per frame
+    void Update () {
+        //enemy moves until the groundCheck is no longer touching the ground layer (layer 8)
+        if (!groundCheck.IsTouchingLayers(LayerMask.GetMask("Ground"))) 
 		{
-			transform.Translate(Vector2.right * movSpeed * Time.deltaTime);
-		}
-
-		else
-		{
-			transform.Translate(Vector2.left * movSpeed * Time.deltaTime);
-		}
-
-		//enemy moves until reaching a boundary, then we will flip the gameObject
-		if (transform.position.x >= positionA.position.x ||
-		transform.position.x < positionB.position.x) 
-		{
-			Flip();
+		    Flip();
 		}
 	}
 
+    void FixedUpdate()
+    {
+        if (moveRight == true)
+        {
+            rb.velocity = Vector2.right * movSpeed;
+        }
+        else
+        {
+            rb.velocity = Vector2.left * movSpeed;
+        }
+        
+    }
+
     //Destroys the GameObject
-	public void Die()
+    public void Die()
 	{
-		Destroy(parent);
+		Destroy(gameObject);
 	}
 
     //flips the entire gameObject and its components
