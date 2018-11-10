@@ -61,6 +61,9 @@ public class PlayerMovementBeginner : MonoBehaviour {
         if (other.gameObject.CompareTag("Pickup"))
         {
             other.gameObject.SetActive(false);
+            /*
+            other.gameObject.state = "carrying";
+            other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);*/
         }
     }
 }
