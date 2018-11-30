@@ -125,7 +125,6 @@ GameObject:
   - component: {fileID: 15748648}
   - component: {fileID: 15748647}
   - component: {fileID: 15748646}
-  - component: {fileID: 15748645}
   m_Layer: 0
   m_Name: TurkeyPatrol (1)
   m_TagString: Pickup
@@ -133,22 +132,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &15748645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 15748644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bd3d56a70f9b4dbb032e377e79189, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveRight: 0
-  movSpeed: 2.5
-  rb: {fileID: 15748647}
-  groundCheck: {fileID: 901146423}
-  groundCollider: {fileID: 901146424}
 --- !u!61 &15748646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -291,7 +274,6 @@ GameObject:
   - component: {fileID: 507839924}
   - component: {fileID: 507839921}
   - component: {fileID: 507839922}
-  - component: {fileID: 507839920}
   m_Layer: 0
   m_Name: TurkeyPatrol
   m_TagString: Pickup
@@ -313,22 +295,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &507839920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 507839918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bd3d56a70f9b4dbb032e377e79189, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveRight: 0
-  movSpeed: 2.5
-  rb: {fileID: 507839921}
-  groundCheck: {fileID: 1755812869}
-  groundCollider: {fileID: 1755812871}
 --- !u!50 &507839921
 Rigidbody2D:
   serializedVersion: 4
@@ -665,7 +631,6 @@ GameObject:
   - component: {fileID: 1843517948}
   - component: {fileID: 1843517947}
   - component: {fileID: 1843517946}
-  - component: {fileID: 1843517945}
   m_Layer: 0
   m_Name: TurkeyPatrol (2)
   m_TagString: Pickup
@@ -673,22 +638,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1843517945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1843517944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bd3d56a70f9b4dbb032e377e79189, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveRight: 0
-  movSpeed: 2.5
-  rb: {fileID: 1843517947}
-  groundCheck: {fileID: 1816309609}
-  groundCollider: {fileID: 1816309610}
 --- !u!61 &1843517946
 BoxCollider2D:
   m_ObjectHideFlags: 0
