@@ -3801,11 +3801,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4626962417379348, guid: 66e8bcd5be4a73f4a992159efaedcaff, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.1662445
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4626962417379348, guid: 66e8bcd5be4a73f4a992159efaedcaff, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.48155
+      value: 10.37
       objectReference: {fileID: 0}
     - target: {fileID: 4626962417379348, guid: 66e8bcd5be4a73f4a992159efaedcaff, type: 2}
       propertyPath: m_LocalPosition.z
