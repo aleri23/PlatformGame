@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 61533808224075292}
   - component: {fileID: 50408907824559458}
   - component: {fileID: 61701579242931758}
-  - component: {fileID: 114716973543195432}
   m_Layer: 0
   m_Name: Turkey
   m_TagString: Pickup
@@ -67,8 +66,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240766660272110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07, y: -4.84, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.15, y: 10.43, z: 0}
+  m_LocalScale: {x: 0.708, y: 0.622, z: 1}
   m_Children:
   - {fileID: 4600141531367366}
   m_Father: {fileID: 0}
@@ -81,7 +80,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240766660272110}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -110,7 +109,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.07, y: 0.97}
+    oldSize: {x: 3.3, y: 3.11}
     newSize: {x: 1.07, y: 0.97}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -135,7 +134,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.07, y: 0.97}
+    oldSize: {x: 3.3, y: 3.11}
     newSize: {x: 1.07, y: 0.97}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -169,22 +168,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &114716973543195432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1240766660272110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3bd3d56a70f9b4dbb032e377e79189, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveRight: 0
-  movSpeed: 2.5
-  rb: {fileID: 50408907824559458}
-  groundCheck: {fileID: 1458871090467494}
-  groundCollider: {fileID: 61958246473235800}
 --- !u!212 &212622416364976010
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -217,10 +200,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -364270219
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 221ea23f021d7db4986b87e05579ecfb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8be224063df1fad46975aede6a06b0cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
